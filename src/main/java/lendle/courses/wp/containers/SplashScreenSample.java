@@ -32,7 +32,10 @@ public class SplashScreenSample {
         //init the JWindow, add component to its content pane
         JWindow window=null;
         ImageIcon icon=new ImageIcon(new URL("https://i.ytimg.com/vi/ND6a4V-xdjI/hqdefault.jpg"));
-        
+        window.setLayout(new BorderLayout());
+        window.getContentPane().add(new JLabel(icon));
+        window.setSize(500,500);
+        window.setLocationRelativeTo(null);
         //////////////////////////////////////////////////////
         
         Thread t=new Thread(){
